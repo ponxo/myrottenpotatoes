@@ -19,3 +19,7 @@
 
 
   = submit_tag 'Update Movie Info'
+
+= form_tag movie_path, :method => :get do
+  
+  = submit_tag 'Cancel', :confirm => 'Do you want cancel?'

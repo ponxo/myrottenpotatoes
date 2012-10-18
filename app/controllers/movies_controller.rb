@@ -15,7 +15,15 @@ class MoviesController < ApplicationController
   end
 
   def index
-    @movies = Movie.find(:all, :order => "title")
+    #@movies = Movie.find(:all, :order => "title")
+    @movies =Movie.all
+    @movies.each do |movie|
+      puts movie.title
+    end
+    @movies.sort_by! {|k| k.title}
+    @movies.each do |movie|
+      puts movie.title
+    end
     @title = "My RottenPotatoes"
   end
 

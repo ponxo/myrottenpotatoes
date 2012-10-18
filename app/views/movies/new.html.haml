@@ -15,7 +15,7 @@
   =text_field :movie, 'description'
   
   = submit_tag 'Save Changes'
-end
-
-= button_to 'Cancel', :controller => movies_path , :method => :get
+= form_tag movies_path, :method => :get do
+  
+  = submit_tag 'Cancel', :confirm => 'Do you want cancel?'
 					

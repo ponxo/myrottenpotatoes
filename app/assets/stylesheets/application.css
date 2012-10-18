@@ -31,9 +31,9 @@ h1.title {
   margin: 0 0 1em;
   padding: 10px;
   background-color: orange;
-  color: red;
+  /*color: red;*/
   border-bottom: 4px solid gold;
-  font-size: 5em;
+  /*font-size: 5em;*/
   font-style: normal;
 }
 table#movies {
@@ -79,5 +79,11 @@ name {
   color: red;
   font-size: 1em;
   font-style: normal;
+}
+
+.enlace{
+  text-decoration: none;
+  color: red;
+  font-size: 5em;
 }
   
